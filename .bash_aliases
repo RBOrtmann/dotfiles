@@ -1,4 +1,5 @@
-alias spotify="spotify --force-device-scale-factor=1.5 &"
-alias autoremove="sudo pacman -Rns $(pacman -Qtdq)"
-alias open=xdg-open
+alias explorer="explorer.exe ."
+alias python=python3
+alias pip=pip3
+alias open=wsl-open
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
