@@ -5,6 +5,7 @@ A repository for my dotfiles. I use:
 - [zsh](zsh.org)
 - [oh-my-zsh](https://ohmyz.sh/)
 - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+  - With the recommended MesloLGS NF font
 - a .dircolors file to set my terminal output to match the Solarized Dark theme
 
 ## .dircolors
