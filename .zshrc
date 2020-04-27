@@ -124,3 +124,8 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+if [ -d ~/.bash_scripts ]; then
+	export PATH="$PATH:$HOME/.bash_scripts"
+fi
