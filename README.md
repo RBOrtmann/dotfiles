@@ -27,3 +27,4 @@ The terminal output should then match the color theme of the terminal assuming i
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [lolcat](https://github.com/busyloop/lolcat) (i'm sorry)
+- [tldr](https://github.com/tldr-pages/tldr)
