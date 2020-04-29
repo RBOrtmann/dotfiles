@@ -19,3 +19,12 @@ fi
 ```
 
 The terminal output should then match the color theme of the terminal assuming it's set to some analogue of Solarized Dark.
+
+## Packages
+
+- [exa](https://github.com/ogham/exa)
+- [thefuck](https://github.com/nvbn/thefuck)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [neofetch](https://github.com/dylanaraps/neofetch)
+- [lolcat](https://github.com/busyloop/lolcat) (i'm sorry)
+- [tldr](https://github.com/tldr-pages/tldr)
