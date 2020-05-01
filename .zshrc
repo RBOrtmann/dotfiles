@@ -130,3 +130,5 @@ fi
 if [ -d ~/.bash_scripts ]; then
 	export PATH="$PATH:$HOME/.bash_scripts"
 fi
+
+PROMPT_EOL_MARK=''
