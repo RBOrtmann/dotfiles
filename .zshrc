@@ -127,3 +127,5 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+export PROMPT_EOL_MARK=''
