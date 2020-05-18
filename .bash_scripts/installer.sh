@@ -7,8 +7,8 @@ dotfiles_alias () {
 
 # Install miscellaneous packages
 install_misc () {
-    # Install yay, neofetch, lolcat
-    sudo pacman -S yay neofetch lolcat
+    # Install yay, neofetch, lolcat, latte dock
+    sudo pacman -S yay neofetch lolcat latte-dock
 
     # Install packages for transparent menus
     sudo pacman -S appmenu-gtk-module libdbusmenu-glib
