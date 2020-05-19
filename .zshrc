@@ -84,6 +84,7 @@ plugins=(
 	thefuck
 	themes
 	zsh_reload
+	#vscode
 	)
 
 source $ZSH/oh-my-zsh.sh
