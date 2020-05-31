@@ -68,9 +68,12 @@ help_menu() {
 
 }
 
+if [[ $# -eq 0 ]]; then
+    help_menu
+fi
+
 for p in $@
 do
-    # find the 
     case $p in
         "-a" | "--all")
             install_all
