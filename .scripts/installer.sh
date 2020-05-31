@@ -7,6 +7,7 @@ dotfiles_alias () {
 
 # Install miscellaneous packages
 install_misc () {
+
     # Install yay, neofetch, lolcat, latte dock
     sudo pacman -S yay neofetch lolcat latte-dock
 
@@ -18,6 +19,7 @@ install_misc () {
 
     # Get Layan theme for Kvantum and GTK
     yay -G layan-kde-git
+
 }
 
 # Install rust crates
