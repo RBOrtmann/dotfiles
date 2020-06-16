@@ -115,8 +115,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
+if [ -f ~/.aliases ]; then
+	. ~/.aliases
 fi
 
 if [ -x /usr/bin/dircolors ]; then
@@ -127,8 +127,8 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-if [ -d ~/.bash_scripts ]; then
-	export PATH="$PATH:$HOME/.bash_scripts"
+if [ -d ~/.scripts ]; then
+	export PATH="$PATH:$HOME/.scripts"
 fi
 
 PROMPT_EOL_MARK=''
