@@ -29,7 +29,7 @@ install_rust () {
     pacman -S rust
 
     # Install exa, ripgrep, tldr
-    cargo install exa ripgrep tldr
+    cargo install exa ripgrep tealdeer
 }
 
 # Install zsh, oh-my-zsh, powerlevel10k
