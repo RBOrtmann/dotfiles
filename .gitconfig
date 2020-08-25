@@ -1,7 +1,5 @@
-[user]
-	name = Brendan Ortmann
-	email = ortmannrb17@gcc.edu
 [credential]
 	helper = store
-[core]
-	autocrlf = input
+[user]
+	email = ortmannrb17@gcc.edu
+	name = RBOrtmann
