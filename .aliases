@@ -1,0 +1,5 @@
+alias open=xdg-open
+alias ls="exa -a"
+alias sdn="shutdown now"
+alias bm=bashmount
+alias dfiles='/usr/bin/git --git-dir=/home/brendan/.dotfiles/ --work-tree=/home/brendan'

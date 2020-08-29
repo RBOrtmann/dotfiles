@@ -1,0 +1,148 @@
+; From the polybar-scripts GitHub repository (info-redshift-temp)
+[module/redshift-temp]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/redshift-temp.sh
+interval = 5
+
+; Also from the above repository
+[module/updates]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/updates.sh
+interval = 600
+
+; Executes a script that opens a new kitty window and updates with yay
+click-left = $HOME/.config/polybar/scripts/update-window.sh
+
+; From https://github.com/ktkk/.dotfiles/blob/master/.config/polybar/config 
+[module/rofi-menu]
+type = custom/text
+content = "󰍜"
+content-padding = 3 
+
+click-left = $HOME/.config/polybar/scripts/launcher.sh
+click-right = $HOME/.config/polybar/scripts/window.sh
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+
+label-open = "󰐥"
+label-open-foreground = ${colors.foreground}
+label-close = "󰖭 "
+label-close-foreground = ${colors.foreground-alt}
+label-separator = " | "
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = "󰤁"
+menu-0-0-exec = menu-open-1
+menu-0-1 = "󰐥"
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = Reboot?
+menu-1-0-exec = reboot
+
+menu-2-0 = Shutdown?
+menu-2-0-exec = poweroff
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = "󰄯"
+;label-focused-background = ${colors.background-alt}
+;label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+label-occupied = "󰄰"
+label-occupied-padding = 2
+
+label-urgent = "󰄰"
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = "󰄰"
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+; Separator in between workspaces
+; label-separator = |
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "󰍛  "
+format-prefix-foreground = ${colors.foreground-alt}
+;format-underline = #f90000
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "󰄉  "
+format-prefix-foreground = ${colors.foreground-alt}
+;format-underline = #4bffdc
+label = %percentage_used:2%%
+
+[module/eth]
+type = internal/network
+interface = enp3s0
+interval = 3.0
+
+;format-connected-underline = #55aa55
+;format-connected-prefix =
+;format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = 󰜮 %downspeed:2%   󰜷 %upspeed:2%
+label-connected-foreground = ${colors.foreground-alt}
+
+format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected =   DISCONNECTED
+label-disconnected-foreground = #666
+
+[module/date]
+type = internal/date
+interval = 1
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = %I:%M
+time-alt = %H:%M:%S
+
+format-prefix = "󰥔 " 
+format-prefix-foreground = ${colors.foreground-alt}
+;format-underline = #0a6cf5
+
+label = %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+use-ui-max = false
+
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+label-volume-foreground = ${colors.foreground}
+
+format-muted = <label-muted>
+label-muted = 󰝟  ──
+label-muted-foreground = ${colors.background-alt}
+
+ramp-volume-0 = 󰕿
+ramp-volume-1 = 󰖀
+ramp-volume-2 = 󰕾 
