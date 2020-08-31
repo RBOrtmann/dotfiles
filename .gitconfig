@@ -3,3 +3,5 @@
 [user]
 	email = ortmannrb17@gcc.edu
 	name = RBOrtmann
+[pull]
+	rebase = false
