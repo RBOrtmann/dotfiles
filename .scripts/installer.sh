@@ -24,9 +24,9 @@ install_misc () {
 
 # Install rust crates
 install_rust () {
+
     # Install rust
-    # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    pacman -S rust
+    pacman -S --needed rust
 
     # Install exa, ripgrep, tldr
     cargo install exa ripgrep tealdeer
