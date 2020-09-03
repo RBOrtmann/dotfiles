@@ -2,3 +2,4 @@ alias open=xdg-open
 alias dfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias ls="exa -a"
 alias sdn="shutdown now"
+alias texhash="sudo texhash"
