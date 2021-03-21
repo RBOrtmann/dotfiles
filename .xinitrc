@@ -66,4 +66,7 @@ get_session(){
     echo "dbus-launch ${dbus_args[*]}"
 }
 
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 exec $(get_session)

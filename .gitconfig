@@ -1,7 +1,11 @@
 [credential]
-	helper = store
+	helper = cache
 [user]
-	email = ortmannrb17@gcc.edu
+	email = tech.head.b@gmail.com
 	name = RBOrtmann
+	password = 634ca792f764f3142c2982889896a5fc29ef559c
+	signingkey = 47C93CB7C24053E4
 [pull]
 	rebase = false
+[commit]
+	gpgsign = true
