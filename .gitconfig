@@ -1,9 +1,9 @@
 [credential]
-	helper = cache
+	helper = cache --timeout=30000
 [user]
 	email = tech.head.b@gmail.com
 	name = RBOrtmann
-	password = 634ca792f764f3142c2982889896a5fc29ef559c
+	password = 4ab3cf4181c1d92000b716bf8644516f3240fbb6
 	signingkey = 47C93CB7C24053E4
 [pull]
 	rebase = false
