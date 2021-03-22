@@ -1,5 +1,5 @@
 [credential]
-	helper = cache --timeout=30000
+	helper = store
 [user]
 	email = tech.head.b@gmail.com
 	name = RBOrtmann
