@@ -137,3 +137,5 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+source /home/brendan/.config/broot/launcher/bash/br

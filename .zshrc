@@ -130,3 +130,5 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 if [ -x /usr/bin/dircolors ]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$dircolors -b"
 fi
+
+source /home/brendan/.config/broot/launcher/bash/br

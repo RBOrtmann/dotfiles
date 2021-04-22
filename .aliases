@@ -4,3 +4,4 @@ alias ls="exa -a"
 alias sdn="shutdown now"
 alias texhash="sudo texhash"
 alias cb="xclip -selection c"
+alias edit=nvim
