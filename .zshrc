@@ -79,7 +79,7 @@ plugins=(
 	git
 	gitfast
 	archlinux
-	#ripgrep
+	ripgrep
 	#thefuck
 	themes
 	vscode
@@ -114,10 +114,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Sets aliases
 if [ -f ~/.aliases ]; then
 	. ~/.aliases
 fi
 
+# Sets environment variables
 if [ -f ~/.env ]; then
 	. ~/.env
 fi
@@ -127,8 +129,13 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Sets directory colors if it exists
 if [ -x /usr/bin/dircolors ]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$dircolors -b"
 fi
 
+# Something to do with broot utility
 source /home/brendan/.config/broot/launcher/bash/br
+
+# Unsets history expansion
+unsetopt HIST_VERIFY
