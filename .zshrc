@@ -83,7 +83,6 @@ plugins=(
 	#thefuck
 	themes
 	vscode
-	zsh_reload
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -139,3 +138,6 @@ source /home/brendan/.config/broot/launcher/bash/br
 
 # Unsets history expansion
 unsetopt HIST_VERIFY
+
+# Loads the "zmv" function
+autoload zmv
