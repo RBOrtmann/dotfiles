@@ -99,3 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Source .aliases file if it exists
+if [ -f ~/.aliases ]; then
+	. ~/.aliases
+fi
