@@ -1,7 +1,0 @@
-[user]
-	name = Brendan Ortmann
-	email = ortmannrb17@gcc.edu
-[credential]
-	helper = store
-[core]
-	autocrlf = input
