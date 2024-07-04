@@ -1,5 +1,5 @@
 #!/bin/bash
 
-filename="$1"
+filename=$(basename "$1")
 
 ffmpeg -i "${filename%.*}.wav" -ab 320k "${filename%.*}.mp3"
