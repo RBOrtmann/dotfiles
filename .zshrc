@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ripgrep)
+plugins=(git ripgrep vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,4 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # Source .aliases file if it exists
 if [ -f ~/.aliases ]; then
 	. ~/.aliases
+fi
+
+# Add scripts to PATH
+if [ -d "$HOME/.scripts" ] ; then
+  PATH="$PATH:$HOME/.scripts"
 fi
