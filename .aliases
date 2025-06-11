@@ -1,2 +1,6 @@
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias ls="lsd -a"
+
+alias du="dust"
+alias cat="bat"
+alias find="fd"

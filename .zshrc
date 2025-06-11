@@ -109,3 +109,7 @@ fi
 if [ -d "$HOME/.scripts" ] ; then
   PATH="$PATH:$HOME/.scripts"
 fi
+
+if [ -d "$HOMEBREW_PREFIX/opt/uutils-coreutils/libexec/uubin" ] ; then
+  PATH="$HOMEBREW_PREFIX/opt/uutils-coreutils/libexec/uubin:$PATH"
+fi
